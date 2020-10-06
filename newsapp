@@ -1,0 +1,11 @@
+import UIKit
+class ViewController: UIViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
+	func button(sender: UIButton) {
+		let alerter = UIAlertController(title: "News App", message: "Go!", preferredStyle: UIAlertController.Style.alert)
+		alerter.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+		present(alertController, animated: true, completion: nil)
+	}
+}
